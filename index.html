@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -14,98 +17,102 @@
       </a>
     </h1>
     <nav>
-      <ul>
-        <li>ALL</li>
-        <li>NEW</li>
-        <li>VINTAGE</li>
-        <li>CATEGORY</li>
-        <li>LOOKBOOK</li>
-        <li>BLOG</li>
-        <li>LOGIN</li>
-        <li>CONTACT</li>
+      <ul class="menu-1">
+        <li><a href="#">ALL</a></li>
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">VINTAGE</a></li>
+        <li><a href="#">CATEGORY</a></li>
+        <li><a href="#">LOOKBOOK</a></li>
+        <li><a href="#">BLOG</a></li>
+      </ul>
+      <ul class="menu-2">
+        <li><a href="#">LOGIN</a></li>
+        <li><a href="#">CONTACT</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <img src="item.jpg" alt="商品のイメージ" width="400" height="500">
-    <h2>TOTALLY Short Sleeve Shirt</h2>
-    <p>テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキスト</p>
-    <p>￥9,999 +tax</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Color</th>
-          <th>Size</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>White</td>
-          <td>S</td>
-          <td>
-            <select name="" id="">
-              <option value="1">1</option>
-              <option value="2">3</option>
-              <option value="3">3</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td>White</td>
-          <td>S</td>
-          <td>
-            <select name="" id="">
-              <option value="1">1</option>
-              <option value="2">3</option>
-              <option value="3">3</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td>White</td>
-          <td>S</td>
-          <td>
-            <select name="" id="">
-              <option value="1">1</option>
-              <option value="2">3</option>
-              <option value="3">3</option>
-            </select>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <button>ADD TO CART</button>
-    <table>
-      <thead>
-        <tr>
-          <th>Size</th>
-          <th>Chest</th>
-          <th>Weist</th>
-          <th>Height</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>S</th>
-          <td>99~99</td>
-          <td>99~99</td>
-          <td>99~99</td>
-        </tr>
-        <tr>
-          <th>M</th>
-          <td>99~99</td>
-          <td>99~99</td>
-          <td>99~99</td>
-        </tr>
-        <tr>
-          <th>L</th>
-          <td>99~99</td>
-          <td>99~99</td>
-          <td>99~99</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="description">
+      <h2>TOTALLY Short Sleeve Shirt</h2>
+      <p class="text">テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキスト</p>
+      <p class="price">￥9,999 +tax</p>
+      <table class="table-1">
+        <thead>
+          <tr>
+            <th class="normal-col">Color</th>
+            <th class="normal-col">Size</th>
+            <th class="select-col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="normal-col">White</td>
+            <td class="normal-col">S</td>
+            <td class="select-col">
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="2">3</option>
+                <option value="3">3</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="normal-col">White</td>
+            <td class="normal-col">M</td>
+            <td class="select-col">
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="2">3</option>
+                <option value="3">3</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="normal-col">White</td>
+            <td class="normal-col">L</td>
+            <td class="select-col">
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="2">3</option>
+                <option value="3">3</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button>ADD TO CART</button>
+      <table class="table-2">
+        <thead>
+          <tr>
+            <th class="size-col">Size</th>
+            <th class="border-left">Chest</th>
+            <th class="border-left">Weist</th>
+            <th class="border-left">Height</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="border-top size-col">S</th>
+            <td class="border-left">99 ～ 99</td>
+            <td class="border-left">99 ～ 99</td>
+            <td class="border-left">99 ～ 99</td>
+          </tr>
+          <tr>
+            <th class="border-top size-col">M</th>
+            <td class="border-left">99 ～ 99</td>
+            <td class="border-left">99 ～ 99</td>
+            <td class="border-left">99 ～ 99</td>
+          </tr>
+          <tr>
+            <th class="border-top size-col">L</th>
+            <td class="border-left">99 ～ 99</td>
+            <td class="border-left">99 ～ 99</td>
+            <td class="border-left">99 ～ 99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </main>
   <footer>
     <small>© TOTALLY</small>
