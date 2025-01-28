@@ -188,3 +188,43 @@ footer {
   margin-top: 96px;
   font-size: 12px;
 }
+
+@media screen and (min-width: 900px) {
+  header {
+    padding: 26px 0;
+    border-bottom: 1px solid var(--border-color);
+    max-width: 1014px;
+    margin: 0 auto;
+  }
+
+  header nav {
+    overflow: auto;
+    max-width: 800px;
+    margin: 32px auto 0;
+  }
+
+  .menu-2 {
+    margin-left: auto;
+  }
+
+  main {
+    padding: 50px 50px 0;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  main img {
+    width: 400px;
+  }
+
+  .description {
+    margin-left: 60px;
+    padding: 0;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
